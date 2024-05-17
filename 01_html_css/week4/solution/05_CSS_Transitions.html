@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transitions</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: background-color 0.5s, width 0.5s;
+        }
+        .box:hover {
+            background-color: blue;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <h3>Hint</h3>
+    <xmp>
+        <head>
+            <style>
+                .box {
+                    width: CHANGE_ME;
+                    height: CHANGE_ME;
+                    background-color: CHANGE_ME;
+                    transition: CHANGE_ME;
+                }
+                .box:hover {
+                    background-color: CHANGE_ME;
+                    width: CHANGE_ME;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="box"></div>
+        </body>
+    </xmp>
+</body>
+</html>
