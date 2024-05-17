@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --main-bg-color: coral;
+            --main-text-color: white;
+            --main-padding: 20px;
+        }
+        .variable-example {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            padding: var(--main-padding);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variables</h1>
+    <div class="variable-example">This is a div with CSS variables.</div>
+</body>
+</html>

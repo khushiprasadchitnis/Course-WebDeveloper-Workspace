@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Nesting</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .nested-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nested Grid</h1>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item nested-grid">
+            <div class="grid-item">Nested 1</div>
+            <div class="grid-item">Nested 2</div>
+        </div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+    </div>
+</body>
+</html>
