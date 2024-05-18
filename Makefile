@@ -1,19 +1,12 @@
-HERE      := ${CURDIR}
-CONTAINER := playground-python
+default:
+	cat Makefile
 
-MESSAGE   := "Changes"
 
-build:
-	docker build -t ${CONTAINER} .devcontainer
+screenshots:
+	@./make-screenshots.sh
 
-run:
-	docker run  -v ${HERE}/workspace:/workspace -it ${CONTAINER}
 
-add:
-	git add .
-
-commit:
-	git commit -m ${MESSAGE}
-
-push:
-	git push
+screenshots-clear:
+	find {0,1,2,3,4,5,6,7,8,9}* -name "*.png" -exec rm {} \;
+	
+	
