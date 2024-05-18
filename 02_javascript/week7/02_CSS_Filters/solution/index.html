@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Filters</title>
+    <style>
+        .image-container {
+            margin: 20px;
+        }
+        .image-container img {
+            width: 300px;
+            height: auto;
+            transition: filter 0.5s;
+        }
+        .image-container img:hover {
+            filter: grayscale(100%) blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Filters</h1>
+    <div class="image-container">
+        <img src="https://www.example.com/image.jpg" alt="Example Image">
+    </div>
+</body>
+</html>

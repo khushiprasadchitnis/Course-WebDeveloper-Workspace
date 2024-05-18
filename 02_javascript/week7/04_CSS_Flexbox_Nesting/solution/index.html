@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Nesting</title>
+    <style>
+        .outer-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+        .inner-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .box {
+            background-color: lightyellow;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nested Flexbox</h1>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+        </div>
+        <div class="inner-container">
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+        </div>
+    </div>
+</body>
+</html>
