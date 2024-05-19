@@ -3,7 +3,7 @@ default:
 
 
 screenshots:
-	@./make-screenshots.sh
+	@./bin/make-screenshots.sh 01_html_css
 
 
 screenshots-clear:
