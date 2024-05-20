@@ -8,5 +8,6 @@
         "**/Thumbs.db": true,
         "**/__pycache__": true
     },
-    "explorerExclude.backup": {}
+    "explorerExclude.backup": {},
+    "livePreview.defaultPreviewPath": "/01_html_css/week1/exercise/02_Internal_CSS.html"
 }
